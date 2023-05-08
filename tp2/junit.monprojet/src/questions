@@ -1,0 +1,5 @@
+ QUESTION 7 :
+Lorsque JUnit exécute les méthodes de test d'une classe de test, il utilise l'objet TestResult pour collecter les résultats des tests.
+ Au cours de l'exécution des tests, si un test échoue, les informations sur le résultat du test sont stockées dans l'objet TestResult. 
+ Si l'échec est dû à une assertion qui échoue, JUnit lève une AssertionFailedError qui est capturée et ajoutée aux échecs de TestResult en appelant la méthode addFailure().
+  Si le test échoue pour toute autre raison, une exception Throwable est levée, capturée et ajoutée aux erreurs de TestResult en appelant la méthode addError(). Une fois que tous les tests ont été exécutés, JUnit affiche les résultats de TestResult, qui comprennent le nombre total de tests exécutés, le nombre de tests réussis, le nombre de tests échoués et le nombre de tests en erreur.
